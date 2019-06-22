@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,400,400i,700&display=swap');
 @import 'posts';
 
 * {
@@ -8,10 +8,17 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 // UTILLS
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+.tac {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color:#828b8f;
 }

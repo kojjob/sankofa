@@ -1,0 +1,5 @@
+<h1 class="show_title"><%= @post.title %></h1>
+<p class="show_p"><%= @post.content %></p>
+<%= link_to "Edit", edit_post_path(@post) %>
+<%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?"} %>
+<%= link_to "Back", root_path(@post) %>
