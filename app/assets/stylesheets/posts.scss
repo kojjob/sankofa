@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   a {
-    font-weight: 100!important;
+    font-weight: 400!important;
   }
 
   .index_title {
@@ -12,7 +12,7 @@
     margin-bottom: 5rem;
 
     span {
-      font-size: .5rem;
+      font-size: .6rem;
       font-weight: 700;
       margin-top: -4rem;
     }
@@ -21,7 +21,7 @@
   .index_p {
     color: #595757;
     font-size: 120%;
-    margin-top: -4rem;
+    margin: -4rem 0 4rem 0;
   }
 }
 

@@ -1,5 +1,13 @@
 <h1 class="show_title"><%= @post.title %></h1>
+    <span><%= time_ago_in_words(@post.created_at) %></span>
 <p class="show_p"><%= @post.content %></p>
+
+<h2>Comments: <%= @post.comments.count %></h2>
+<%= render @post.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
 <%= link_to "Edit", edit_post_path(@post) %>
 <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?"} %>
 <%= link_to "Back", root_path(@post) %>

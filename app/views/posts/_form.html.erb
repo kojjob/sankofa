@@ -1,5 +1,5 @@
-<div class="container">
-  <%= form_for(@post) do |f| %>
+<%= form_with scope: :post, url: posts_path, local: true do |f| %>
+
   <div class="form_group">
     <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: "Choose a category" }) %><br>
   </div>
@@ -13,4 +13,3 @@
     <%= f.submit class:"btn" %>
   <% end %>
 
-</div>
